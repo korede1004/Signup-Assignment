@@ -1,0 +1,291 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* css variables */
+:root {
+  --Grey: #737373;
+  --black: #000b0a;
+  --white: #ffffff;
+  --green: #2ec4b6;
+  --lime: #f7fdfc;
+}
+
+/* USing an imported font family */
+@font-face {
+  font-family: "sofia-pro";
+  src: url("../sofiapro/Fonts/sofiapro-light.otf") format("opentype");
+}
+@font-face {
+  font-family: Brown-Regular;
+  src: url(../fonts/Brown-Font/BrownLightRegular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Brown-Bold;
+  src: url(../fonts/Brown-Font/BrownBold.ttf) format("truetype");
+}
+/* USing an imported font family */
+
+body {
+  background-color: var(--lime);
+}
+
+nav,
+header {
+  font-family: Brown-Regular;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 24px;
+  padding-block-start: 14px;
+}
+
+header {
+  padding-inline: 24px;
+  > .desktop-text {
+    display: none;
+  }
+}
+
+.Desktop-logo {
+  display: none;
+}
+.Mobile-logo {
+  padding-block-start: 32px;
+  > img {
+    margin-inline-start: -10.0992px;
+  }
+}
+h1 {
+  font-family: Brown-Bold;
+  padding-block-start: 20px;
+  padding-block-end: 12px;
+  font-size: 1.875rem;
+}
+/* styling all p(s) expect for the one with a class value of time */
+p:not(.time > p) {
+  color: var(--Grey);
+  line-height: 1.5625rem;
+  font-size: 1rem;
+  font-family: sofia-pro;
+  padding-block-end: 40px;
+}
+main {
+  font-family: sofia-pro;
+  padding-inline: 24px;
+}
+/* styling the form */
+form {
+  background-color: var(--white);
+  padding-inline: 16px;
+  padding-block-start: 24px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+form label {
+  display: block;
+  line-height: 14px;
+  padding-block-end: 8px;
+  font-weight: 600;
+}
+form input {
+  width: 100%;
+  display: block;
+  padding-inline-start: 1rem;
+  padding-inline-end: 52px;
+  padding-block: 14px;
+  line-height: 1.25rem;
+  border: 3px solid var(--lime);
+  border-radius: 2px;
+  outline: none;
+}
+form input:focus,
+form select:focus {
+  border: 3px solid var(--green);
+}
+
+/* styling all input placeholder */
+form input::placeholder {
+  color: var(--Grey);
+}
+.flex,
+.ActivityLevel,
+.Password {
+  padding-block-end: 24px;
+}
+form .firstName input::before {
+  border: 3px solid var(--green);
+}
+select {
+  width: 100%;
+  display: block;
+  padding-inline-start: 16px;
+  padding-block: 14px;
+  line-height: 1.25rem;
+  border: 3px solid var(--lime);
+  border-radius: 2px;
+  outline: none;
+  padding-inline-end: 20px;
+  appearance: none;
+  color: var(--Grey);
+  background: url(../Images/Form/ArrowDown.svg) no-repeat;
+  background-position: right 12px center;
+}
+
+.DateOfBirth input {
+  background: url(../Images/Form/Calendar.svg) no-repeat;
+  background-position: right 12px center;
+}
+/* The style below hides the default calendar Icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+}
+/* The style above hides the default calendar Icon */
+
+input[type="date"]::before {
+  content: attr(placeholder);
+  color: var(--Grey);
+  font-family: Sofia-pro;
+}
+
+/* This hide the default placeholder of input-type "date"*/
+input[type="date"] {
+  color: #fff;
+  padding-inline-end: 12px;
+}
+/* This hide the default placeholder of input-type "date" */
+
+/* to show after click */
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+
+input[type="date"]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+/* to show after click */
+.Password input {
+  background: url(../Images/Form/Eye.svg) no-repeat;
+  background-position: right 12px center;
+}
+.button button {
+  width: 100%;
+  padding-block: 14px;
+  margin-block-end: 30px;
+  line-height: 1.25rem;
+  border: 3px solid var(--lime);
+  border-radius: 6px;
+  outline: none;
+  background-color: var(--green);
+  color: var(--lime);
+  font-weight: 600;
+}
+
+footer {
+  padding-block-start: 24px;
+  padding-inline: 24px;
+}
+.terms {
+  display: none;
+}
+#terms {
+  padding-inline-start: 6px;
+  padding-inline-end: 6px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5625rem;
+  padding-block-end: 64px;
+  font-size: 0.875rem;
+  color: var(--black);
+  > a {
+    color: var(--green);
+  }
+}
+/* Styling for the desktop view 768px Screen size above */
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: none;
+  }
+  header {
+    padding-block-start: 120px;
+    padding-block-end: 40px;
+    > p.desktop-text {
+      display: contents;
+      font-size: 1rem;
+      line-height: 25px;
+      font-family: Brown-Regular;
+      padding-inline-end: 120px;
+    }
+    > p.mobile-text {
+      display: none;
+    }
+  }
+  main {
+    max-width: 100%;
+  }
+  .Mobile-logo {
+    display: none;
+  }
+
+  .Desktop-logo {
+    display: contents;
+    > img {
+      margin-inline-start: -10.1px;
+    }
+  }
+  .container {
+    padding-block-start: 80px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    padding-block-start: 15px;
+    padding-block-end: 20px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+  .terms {
+    display: contents;
+  }
+  footer {
+    display: none;
+  }
+  .group {
+    display: flex;
+    gap: 24px;
+  }
+  .flex,
+  .ActivityLevel,
+  .Password {
+    width: 100%;
+    padding-block-end: 30px;
+  }
+}
+/* Styling for the desktop view 1024px Screen size above */
+@media screen and (min-width: 1024px) {
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 140px;
+  }
+  header {
+    max-width: 460px;
+  }
+  form {
+    max-width: 100%;
+    padding: 40px;
+    margin-block-end: 80px;
+  }
+  .button button {
+    margin-block-end: 16px;
+  }
+  #terms {
+    padding-block-end: 40px;
+  }
+}
