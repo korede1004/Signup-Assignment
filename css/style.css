@@ -126,8 +126,8 @@ select {
   width: 100%;
   display: block;
   padding-inline-start: 16px;
-  padding-block: 14px;
-  line-height: 1.25rem;
+  padding-block: 15px;
+  line-height: 20px;
   border: 3px solid var(--lime);
   border-radius: 2px;
   outline: none;
@@ -183,7 +183,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   border-radius: 6px;
   outline: none;
   background-color: var(--green);
-  color: var(--lime);
+  color: var(--white);
   font-weight: 600;
 }
 
