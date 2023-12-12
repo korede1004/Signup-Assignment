@@ -269,23 +269,24 @@ footer {
 }
 /* Styling for the desktop view 1024px Screen size above */
 @media screen and (min-width: 1024px) {
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 140px;
-  }
-  header {
-    max-width: 460px;
-  }
-  form {
-    max-width: 100%;
-    padding: 40px;
-    margin-block-end: 80px;
-  }
-  .button button {
-    margin-block-end: 16px;
-  }
-  #terms {
-    padding-block-end: 40px;
-  }
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 140px;
+        justify-content: center;
+    }
+    header {
+        max-width: 460px;
+    }
+    form {
+        max-width: 100%;
+        padding: 40px;
+        margin-block-end: 80px;
+    }
+    .button button {
+        margin-block-end: 16px;
+    }
+    #terms {
+        padding-block-end: 40px;
+    }
 }
