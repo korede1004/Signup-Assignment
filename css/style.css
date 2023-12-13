@@ -156,8 +156,8 @@ input[type="date"]::before {
 
 /* This hide the default placeholder of input-type "date"*/
 input[type="date"] {
-  /* color: #fff; */
-  /* padding-inline-end: 12px; */
+  color: #fff;
+  padding-inline-end: 12px;
 }
 /* This hide the default placeholder of input-type "date" */
 
