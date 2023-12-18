@@ -22,119 +22,123 @@
             alt="Battery">
         </div>
     </nav>
-<section class="container">
-   <div class="flex-container">
-        <header>
-            <div class="Desktop-logo">
-                <img src="./Images/DesktopLogo.svg"
-                alt="Company Logo">
-            </div>
-            <div class="Mobile-logo">
-                <img src="./Images/ios/MobileLogo-1.svg" 
-                alt="Company Logo">
-            </div>
-            <h1>
-                For Individuals
-            </h1>
-            <p class="mobile-text">
-                Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.
-            </p>
-            <p class="desktop-text">
-                Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.
-            </p>
-        </header>
-        <main>
-            <form action="#">
-                <div class="firstgroup group">
-                    <div class="firstName flex">
-                        <label for="First-Name">First Name</label>
-                        <input required type="text" name="First-Name" id="First-Name" placeholder="Tolu">
-                    </div>
-                    <div class="LastName flex">
-                        <label for="Last-Name">Last Name</label>
-                        <input required type="text" name="Last-Name" id="Last-Name" placeholder="">
-                    </div>
+    <section class="container">
+        <div class="flex-container">
+            <header>
+                <div class="Desktop-logo">
+                    <img src="./Images/DesktopLogo.svg"
+                    alt="Company Logo">
                 </div>
-                <div class="secondgroup group">
-                    <div class="Gender flex">
-                        <label for="Gender">Gender</label>
-                        <select name="Gender" id="Gender">
+                <div class="Mobile-logo">
+                    <img src="./Images/ios/MobileLogo-1.svg" 
+                    alt="Company Logo">
+                </div>
+                <h1>
+                    For Individuals
+                </h1>
+                <p class="mobile-text">
+                    Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.
+                </p>
+                <p class="desktop-text">
+                    Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.
+                </p>
+            </header>
+            
+            <main>
+                <form action="#">
+                    <div class="firstgroup group">
+                        <div class="firstName flex">
+                            <label for="First-Name">First Name</label>
+                            <input required type="text" name="First-Name" id="First-Name" placeholder="Tolu">
+                        </div>
+                        <div class="LastName flex">
+                            <label for="Last-Name">Last Name</label>
+                            <input required type="text" name="Last-Name" id="Last-Name" placeholder="">
+                        </div>
+                    </div>
+                    <div class="secondgroup group">
+                        <div class="Gender flex">
+                            <label for="Gender">Gender</label>
+                            <select name="Gender" id="Gender">
+                                <option selected value="text">
+                                    Select here
+                                </option>
+                                <option value="Male">
+                                    Male
+                                </option>
+                                <option value="female">
+                                    Female
+                                </option>
+                            </select>
+                        </div>
+                        <div class="DateOfBirth flex">
+                            <label for="DateOfBirth">
+                                Date of Birth
+                            </label>
+                            <input type="text" id="date" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Select here">
+
+                        </div>
+                    </div>
+                    <div class="thirdgroup group">
+                        <div class="Weight flex">
+                            <label for="Weight">
+                                Weight (KG)
+                            </label>
+                            <input required type="number" name="Weight" id="Weight" placeholder="Enter Weight">
+                        </div>
+                        <div class="Height flex">
+                            <label for="Height">
+                                Height (CM)
+                            </label>
+                            <input required type="number" name="Height" id="Height" placeholder="Enter height here..">
+                        </div>
+                    </div>
+                    <div class="ActivityLevel">
+                        <label for="ActivityLevel">
+                            Activity Level
+                        </label>
+                        <select name="ActivityLevel" id="ActivityLevel">
                             <option selected value="text">
                                 Select here
                             </option>
-                            <option value="Male">
-                                Male
+                            <option value="Beginner">
+                                Beginner
                             </option>
-                            <option value="female">
-                                Female
+                            <option value="Intermediate">
+                                Intermediate
+                            </option>
+                            <option value="Professional">
+                                Professional
                             </option>
                         </select>
                     </div>
-                    <div class="DateOfBirth flex">
-                        <label for="DateOfBirth">
-                            Date of Birth
+                    <div class="Password">
+                        <label for="Password">
+                            Password
                         </label>
-                        <input type="text" id="date" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Select here">
+                        <input required type="Password" name="Password" id="Password">
+                    </div>
+                    <div class="button" role="button">
+                        <button type="submit">
+                            Register
+                        </button>
+                    </div>
+                    <div class="terms">
+                        <p id="terms">
+                            By clicking Register, you agree to our <a href="#"> Terms of Use</a> and our <a href="#">Privacy Policy</a>
+                        </p>
+                    </div>
+                </form>
+            </main>
+        </div>
 
-                    </div>
-                </div>
-                <div class="thirdgroup group">
-                    <div class="Weight flex">
-                        <label for="Weight">
-                            Weight (KG)
-                        </label>
-                        <input required type="number" name="Weight" id="Weight" placeholder="Enter Weight">
-                    </div>
-                    <div class="Height flex">
-                        <label for="Height">
-                            Height (CM)
-                        </label>
-                        <input required type="number" name="Height" id="Height" placeholder="Enter height here..">
-                    </div>
-                </div>
-                <div class="ActivityLevel">
-                    <label for="ActivityLevel">
-                        Activity Level
-                    </label>
-                    <select name="ActivityLevel" id="ActivityLevel">
-                        <option selected value="text">
-                            Select here
-                        </option>
-                        <option value="Beginner">
-                            Beginner
-                        </option>
-                        <option value="Intermediate">
-                            Intermediate
-                        </option>
-                        <option value="Professional">
-                            Professional
-                        </option>
-                    </select>
-                </div>
-                <div class="Password">
-                    <label for="Password">
-                        Password
-                    </label>
-                    <input required type="Password" name="Password" id="Password">
-                </div>
-                <div class="button" role="button">
-                    <button type="submit">
-                        Register
-                    </button>
-                </div>
-                <div class="terms">
-                    <p id="terms">
-                        By clicking Register, you agree to our <a href="#"> Terms of Use</a> and our <a href="#">Privacy Policy</a>
-                    </p>
-                </div>
-            </form>
-        </main>
-   </div>
-    <footer>
-        <p id="terms">
-            By clicking Register, you agree to our <a href="#"> Terms of Use</a> and our <a href="#">Privacy Policy</a>
-        </p>
-</footer>
-</section>
+        <footer>
+            <p id="terms">
+                By clicking Register, you agree to our <a href="#"> Terms of Use</a> and our <a href="#">Privacy Policy</a>
+            </p>
+        </footer>
+        
+    </section>
+
 </body>
 </html>
