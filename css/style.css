@@ -167,7 +167,7 @@ input[type="date"]:required:invalid::-webkit-datetime-edit {
 }
 
 input[type="date"]:focus::-webkit-datetime-edit {
-  color: black !important;
+  color:transparent !important;
 }
 /* to show after click */
 .Password input {
@@ -270,13 +270,14 @@ footer {
 /* Styling for the desktop view 1024px Screen size above */
 @media screen and (min-width: 1024px) {
     .flex-container {
-        display: flex;
-        justify-content: space-between;
-        padding-inline: 140px;
-        justify-content: center;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding-inline: 50px;
+      justify-content: center;
     }
     header {
-        max-width: 460px;
+      max-width: 460px;
     }
     form {
         max-width: 100%;
@@ -288,5 +289,15 @@ footer {
     }
     #terms {
         padding-block-end: 40px;
+      }
     }
+    @media screen and (min-width: 1440px) {
+  .flex-container {
+
+    width: 100%;
+    padding-inline:140px;
+  }
+  form{
+    width: 100%;
+  }
 }
